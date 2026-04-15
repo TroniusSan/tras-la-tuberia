@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Guide - Learning Skills</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🚀 Learning Skills</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="html-basics.html">HTML</a></li>
+                <li><a href="css-guide.html" class="active">CSS</a></li>
+                <li><a href="javascript-intro.html">JavaScript</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <article class="article-page">
+            <h1>CSS Guide</h1>
+            <p class="article-meta">Intermediate Level • 8 min read</p>
+
+            <h2>What is CSS?</h2>
+            <p>CSS (Cascading Style Sheets) is used to style and layout web pages. It controls colors, fonts, spacing, and positioning of HTML elements.</p>
+
+            <h2>How to Apply CSS</h2>
+
+            <h3>1. Inline CSS</h3>
+            <div class="code-block">
+                <code>&lt;p style="color: red;"&gt;This text is red&lt;/p&gt;</code>
+            </div>
+
+            <h3>2. Internal CSS</h3>
+            <div class="code-block">
+                <code>&lt;style&gt;<br>
+p { color: blue; }<br>
+&lt;/style&gt;</code>
+            </div>
+
+            <h3>3. External CSS</h3>
+            <div class="code-block">
+                <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+            </div>
+
+            <h2>CSS Selectors</h2>
+            <ul>
+                <li><strong>Element Selector:</strong> p { }</li>
+                <li><strong>Class Selector:</strong> .className { }</li>
+                <li><strong>ID Selector:</strong> #idName { }</li>
+                <li><strong>Universal Selector:</strong> * { }</li>
+                <li><strong>Attribute Selector:</strong> input[type="text"] { }</li>
+            </ul>
+
+            <h2>Box Model</h2>
+            <p>Every element consists of:</p>
+            <ul>
+                <li><strong>Content</strong> - The actual content inside the element</li>
+                <li><strong>Padding</strong> - Space inside the element border</li>
+                <li><strong>Border</strong> - Line around the padding</li>
+                <li><strong>Margin</strong> - Space outside the border</li>
+            </ul>
+            <div class="code-block">
+                <code>.box {<br>
+&nbsp;&nbsp;margin: 10px;<br>
+&nbsp;&nbsp;padding: 20px;<br>
+&nbsp;&nbsp;border: 1px solid black;<br>
+}</code>
+            </div>
+
+            <h2>Flexbox Layout</h2>
+            <p>Flexbox makes it easy to arrange elements in a row or column:</p>
+            <div class="code-block">
+                <code>.container {<br>
+&nbsp;&nbsp;display: flex;<br>
+&nbsp;&nbsp;justify-content: center;<br>
+&nbsp;&nbsp;gap: 20px;<br>
+}</code>
+            </div>
+
+            <h2>Grid Layout</h2>
+            <p>CSS Grid is perfect for creating complex layouts:</p>
+            <div class="code-block">
+                <code>.grid {<br>
+&nbsp;&nbsp;display: grid;<br>
+&nbsp;&nbsp;grid-template-columns: 1fr 2fr 1fr;<br>
+&nbsp;&nbsp;gap: 15px;<br>
+}</code>
+            </div>
+
+            <h2>Responsive Design</h2>
+            <p>Use media queries to make your site responsive:</p>
+            <div class="code-block">
+                <code>@media (max-width: 768px) {<br>
+&nbsp;&nbsp;.container {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: 1fr;<br>
+&nbsp;&nbsp;}<br>
+}</code>
+            </div>
+
+            <h2>Common Properties</h2>
+            <ul>
+                <li><strong>color:</strong> Text color</li>
+                <li><strong>background-color:</strong> Background color</li>
+                <li><strong>font-size:</strong> Text size</li>
+                <li><strong>width/height:</strong> Element dimensions</li>
+                <li><strong>opacity:</strong> Transparency (0-1)</li>
+                <li><strong>transition:</strong> Smooth animations</li>
+            </ul>
+
+            <h2>Key Takeaways</h2>
+            <ul>
+                <li>CSS controls the visual appearance of HTML elements</li>
+                <li>Use external stylesheets for maintainability</li>
+                <li>Master the box model for better layouts</li>
+                <li>Flexbox and Grid are modern layout solutions</li>
+                <li>Always design with mobile responsiveness in mind</li>
+            </ul>
+
+            <a href="../index.html" class="back-link">← Back to Home</a>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Learning Skills. All rights reserved. | Built with ❤️ for developers</p>
+    </footer>
+</body>
+</html>
