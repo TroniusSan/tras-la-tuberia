@@ -21,103 +21,99 @@
 
     <main class="container">
         <article class="article-page">
-            <h1>CSS Guide</h1>
-            <p class="article-meta">Intermediate Level • 8 min read</p>
+            <h1>CSS Guide - Styling Web Pages</h1>
+            <p class="article-meta">Beginner Level • 8 min read</p>
 
             <h2>What is CSS?</h2>
             <p>CSS (Cascading Style Sheets) is used to style and layout web pages. It controls colors, fonts, spacing, and positioning of HTML elements.</p>
 
-            <h2>How to Apply CSS</h2>
-
+            <h2>Three Ways to Add CSS</h2>
             <h3>1. Inline CSS</h3>
             <div class="code-block">
-                <code>&lt;p style="color: red;"&gt;This text is red&lt;/p&gt;</code>
+                <code>&lt;p style="color: blue; font-size: 18px;"&gt;Styled paragraph&lt;/p&gt;</code>
             </div>
 
             <h3>2. Internal CSS</h3>
             <div class="code-block">
                 <code>&lt;style&gt;<br>
-p { color: blue; }<br>
+&nbsp;&nbsp;p { color: blue; }<br>
 &lt;/style&gt;</code>
             </div>
 
-            <h3>3. External CSS</h3>
+            <h3>3. External CSS (Recommended)</h3>
             <div class="code-block">
                 <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
             </div>
 
             <h2>CSS Selectors</h2>
-            <ul>
-                <li><strong>Element Selector:</strong> p { }</li>
-                <li><strong>Class Selector:</strong> .className { }</li>
-                <li><strong>ID Selector:</strong> #idName { }</li>
-                <li><strong>Universal Selector:</strong> * { }</li>
-                <li><strong>Attribute Selector:</strong> input[type="text"] { }</li>
-            </ul>
+            <h3>Element Selector</h3>
+            <div class="code-block">
+                <code>p { color: blue; }</code>
+            </div>
 
-            <h2>Box Model</h2>
-            <p>Every element consists of:</p>
+            <h3>Class Selector</h3>
+            <div class="code-block">
+                <code>.highlight { background-color: yellow; }</code>
+            </div>
+
+            <h3>ID Selector</h3>
+            <div class="code-block">
+                <code>#header { font-size: 2rem; }</code>
+            </div>
+
+            <h2>The Box Model</h2>
+            <p>Every element in CSS has a box model consisting of:</p>
             <ul>
-                <li><strong>Content</strong> - The actual content inside the element</li>
-                <li><strong>Padding</strong> - Space inside the element border</li>
-                <li><strong>Border</strong> - Line around the padding</li>
+                <li><strong>Content</strong> - The actual content</li>
+                <li><strong>Padding</strong> - Space around content</li>
+                <li><strong>Border</strong> - Surrounds the padding</li>
                 <li><strong>Margin</strong> - Space outside the border</li>
             </ul>
             <div class="code-block">
                 <code>.box {<br>
 &nbsp;&nbsp;margin: 10px;<br>
-&nbsp;&nbsp;padding: 20px;<br>
-&nbsp;&nbsp;border: 1px solid black;<br>
+&nbsp;&nbsp;border: 2px solid black;<br>
+&nbsp;&nbsp;padding: 15px;<br>
 }</code>
             </div>
 
             <h2>Flexbox Layout</h2>
-            <p>Flexbox makes it easy to arrange elements in a row or column:</p>
+            <p>Flexbox is a powerful tool for creating flexible layouts:</p>
             <div class="code-block">
                 <code>.container {<br>
 &nbsp;&nbsp;display: flex;<br>
 &nbsp;&nbsp;justify-content: center;<br>
-&nbsp;&nbsp;gap: 20px;<br>
-}</code>
-            </div>
-
-            <h2>Grid Layout</h2>
-            <p>CSS Grid is perfect for creating complex layouts:</p>
-            <div class="code-block">
-                <code>.grid {<br>
-&nbsp;&nbsp;display: grid;<br>
-&nbsp;&nbsp;grid-template-columns: 1fr 2fr 1fr;<br>
-&nbsp;&nbsp;gap: 15px;<br>
+&nbsp;&nbsp;align-items: center;<br>
+&nbsp;&nbsp;gap: 10px;<br>
 }</code>
             </div>
 
             <h2>Responsive Design</h2>
-            <p>Use media queries to make your site responsive:</p>
+            <p>Use media queries to adapt your design for different screen sizes:</p>
             <div class="code-block">
                 <code>@media (max-width: 768px) {<br>
-&nbsp;&nbsp;.container {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: 1fr;<br>
-&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;.container { flex-direction: column; }<br>
 }</code>
             </div>
 
-            <h2>Common Properties</h2>
+            <h2>Common CSS Properties</h2>
             <ul>
-                <li><strong>color:</strong> Text color</li>
-                <li><strong>background-color:</strong> Background color</li>
-                <li><strong>font-size:</strong> Text size</li>
-                <li><strong>width/height:</strong> Element dimensions</li>
-                <li><strong>opacity:</strong> Transparency (0-1)</li>
-                <li><strong>transition:</strong> Smooth animations</li>
+                <li><strong>color</strong> - Text color</li>
+                <li><strong>background-color</strong> - Background color</li>
+                <li><strong>font-size</strong> - Size of text</li>
+                <li><strong>width, height</strong> - Element dimensions</li>
+                <li><strong>margin, padding</strong> - Spacing</li>
+                <li><strong>border</strong> - Element border</li>
+                <li><strong>border-radius</strong> - Rounded corners</li>
             </ul>
 
             <h2>Key Takeaways</h2>
             <ul>
-                <li>CSS controls the visual appearance of HTML elements</li>
-                <li>Use external stylesheets for maintainability</li>
-                <li>Master the box model for better layouts</li>
-                <li>Flexbox and Grid are modern layout solutions</li>
-                <li>Always design with mobile responsiveness in mind</li>
+                <li>CSS makes web pages look beautiful and professional</li>
+                <li>Use external CSS files for better organization</li>
+                <li>Understand the box model for proper spacing</li>
+                <li>Flexbox and Grid are essential for modern layouts</li>
+                <li>Always test your design on mobile devices</li>
             </ul>
 
             <a href="../index.html" class="back-link">← Back to Home</a>
