@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Introduction - Learning Skills</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🚀 Learning Skills</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="html-basics.html">HTML</a></li>
+                <li><a href="css-guide.html">CSS</a></li>
+                <li><a href="javascript-intro.html" class="active">JavaScript</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <article class="article-page">
+            <h1>JavaScript Introduction</h1>
+            <p class="article-meta">Beginner Level • 10 min read</p>
+
+            <h2>What is JavaScript?</h2>
+            <p>JavaScript is a programming language that makes web pages interactive. It runs in the browser and allows you to respond to user actions.</p>
+
+            <h2>Where to Write JavaScript</h2>
+
+            <h3>1. Inline JavaScript</h3>
+            <div class="code-block">
+                <code>&lt;button onclick="alert('Hello!')"&gt;Click me&lt;/button&gt;</code>
+            </div>
+
+            <h3>2. Script Tag</h3>
+            <div class="code-block">
+                <code>&lt;script&gt;<br>
+console.log('Hello World');<br>
+&lt;/script&gt;</code>
+            </div>
+
+            <h3>3. External File</h3>
+            <div class="code-block">
+                <code>&lt;script src="script.js"&gt;&lt;/script&gt;</code>
+            </div>
+
+            <h2>Variables</h2>
+            <p>Variables store data that you can use and manipulate:</p>
+            <div class="code-block">
+                <code>let name = "John";<br>
+const age = 25;<br>
+var city = "New York";</code>
+            </div>
+            <ul>
+                <li><strong>let:</strong> Block-scoped, preferred choice</li>
+                <li><strong>const:</strong> Cannot be reassigned, use by default</li>
+                <li><strong>var:</strong> Avoid using (outdated)</li>
+            </ul>
+
+            <h2>Data Types</h2>
+            <ul>
+                <li><strong>String:</strong> Text data - "Hello"</li>
+                <li><strong>Number:</strong> Integer or decimal - 42, 3.14</li>
+                <li><strong>Boolean:</strong> True or false</li>
+                <li><strong>Array:</strong> List of values - [1, 2, 3]</li>
+                <li><strong>Object:</strong> Collection of properties - {name: "John"}</li>
+            </ul>
+
+            <h2>Functions</h2>
+            <p>Functions are reusable blocks of code:</p>
+            <div class="code-block">
+                <code>function greet(name) {<br>
+&nbsp;&nbsp;return "Hello, " + name;<br>
+}<br>
+<br>
+greet("Alice");</code>
+            </div>
+
+            <h2>Arrow Functions</h2>
+            <p>A modern way to write functions:</p>
+            <div class="code-block">
+                <code>const add = (a, b) => a + b;<br>
+add(5, 3); // Returns 8</code>
+            </div>
+
+            <h2>Control Flow</h2>
+
+            <h3>If Statement</h3>
+            <div class="code-block">
+                <code>if (age >= 18) {<br>
+&nbsp;&nbsp;console.log("Adult");<br>
+} else {<br>
+&nbsp;&nbsp;console.log("Minor");<br>
+}</code>
+            </div>
+
+            <h3>Loops</h3>
+            <div class="code-block">
+                <code>for (let i = 0; i < 5; i++) {<br>
+&nbsp;&nbsp;console.log(i);<br>
+}</code>
+            </div>
+
+            <h2>DOM Manipulation</h2>
+            <p>Select and modify HTML elements:</p>
+            <div class="code-block">
+                <code>// Select element<br>
+const btn = document.getElementById("myBtn");<br>
+<br>// Change content<br>
+btn.textContent = "Click me!";<br>
+<br>// Add event listener<br>
+btn.addEventListener("click", () => {<br>
+&nbsp;&nbsp;alert("Button clicked!");<br>
+});</code>
+            </div>
+
+            <h2>Array Methods</h2>
+            <ul>
+                <li><strong>map():</strong> Transform array elements</li>
+                <li><strong>filter():</strong> Keep elements that match condition</li>
+                <li><strong>forEach():</strong> Loop through array</li>
+                <li><strong>find():</strong> Find first matching element</li>
+                <li><strong>push():</strong> Add element to end</li>
+            </ul>
+
+            <h2>Key Takeaways</h2>
+            <ul>
+                <li>JavaScript adds interactivity to web pages</li>
+                <li>Use const by default, let when needed</li>
+                <li>Functions help organize and reuse code</li>
+                <li>DOM manipulation allows you to change HTML dynamically</li>
+                <li>Array methods like map and filter are powerful tools</li>
+                <li>Always use the browser console for debugging</li>
+            </ul>
+
+            <a href="../index.html" class="back-link">← Back to Home</a>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Learning Skills. All rights reserved. | Built with ❤️ for developers</p>
+    </footer>
+</body>
+</html>
