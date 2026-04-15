@@ -18,83 +18,50 @@
             </ul>
         </div>
     </nav>
-
     <main class="container">
-        <article class="article-page">
-            <h1>HTML Basics</h1>
-            <p class="article-meta">Beginner Level • 5 min read</p>
-
+        <a href="../index.html" class="back-link">← Back to Home</a>
+        <article class="article-container">
+            <h1>📝 HTML Basics</h1>
             <h2>What is HTML?</h2>
-            <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It provides the structure and content of websites.</p>
-
-            <h2>Basic Structure</h2>
-            <p>Every HTML document follows this basic structure:</p>
-            <div class="code-block">
-                <code>&lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>
-&nbsp;&nbsp;&lt;head&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;<br>
-&nbsp;&nbsp;&lt;/head&gt;<br>
-&nbsp;&nbsp;&lt;body&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello World&lt;/h1&gt;<br>
-&nbsp;&nbsp;&lt;/body&gt;<br>
-&lt;/html&gt;</code>
-            </div>
-
-            <h2>Common HTML Elements</h2>
-            <h3>Headings</h3>
-            <p>Use h1 to h6 for headings, with h1 being the most important:</p>
-            <div class="code-block">
-                <code>&lt;h1&gt;Main Title&lt;/h1&gt;<br>
-&lt;h2&gt;Subtitle&lt;/h2&gt;</code>
-            </div>
-
-            <h3>Paragraphs</h3>
-            <div class="code-block">
-                <code>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code>
-            </div>
-
-            <h3>Links</h3>
-            <div class="code-block">
-                <code>&lt;a href="https://example.com"&gt;Click here&lt;/a&gt;</code>
-            </div>
-
-            <h3>Images</h3>
-            <div class="code-block">
-                <code>&lt;img src="image.jpg" alt="Description"&gt;</code>
-            </div>
-
-            <h3>Lists</h3>
-            <div class="code-block">
-                <code>&lt;ul&gt;<br>
-&nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
-&nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
-&lt;/ul&gt;</code>
-            </div>
-
+            <p>HTML (HyperText Markup Language) is the standard markup language used to create web pages. It provides the structure and content of websites. HTML uses a system of tags and elements to tell web browsers how to display content.</p>
+            <h2>Basic HTML Structure</h2>
+            <p>Every HTML document starts with a basic structure:</p>
+            <div class="code-block"><code>&lt;!DOCTYPE html&gt;<br>&lt;html lang="en"&gt;<br>&lt;head&gt;<br>&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&nbsp;&nbsp;&lt;h1&gt;Welcome!&lt;/h1&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;</code></div>
+            <h2>Common HTML Tags</h2>
+            <ul>
+                <li><strong>&lt;h1&gt; to &lt;h6&gt;</strong> - Headings (h1 is the largest)</li>
+                <li><strong>&lt;p&gt;</strong> - Paragraph of text</li>
+                <li><strong>&lt;a&gt;</strong> - Hyperlink to another page</li>
+                <li><strong>&lt;img&gt;</strong> - Embed an image</li>
+                <li><strong>&lt;div&gt;</strong> - Container for grouping content</li>
+                <li><strong>&lt;ul&gt; / &lt;ol&gt;</strong> - Unordered and ordered lists</li>
+                <li><strong>&lt;li&gt;</strong> - List item</li>
+                <li><strong>&lt;button&gt;</strong> - Interactive button</li>
+                <li><strong>&lt;form&gt;</strong> - Input form for user data</li>
+            </ul>
             <h2>Semantic HTML</h2>
-            <p>Use semantic elements to give meaning to your content:</p>
-            <ul>
-                <li><strong>&lt;header&gt;</strong> - Page or section header</li>
-                <li><strong>&lt;nav&gt;</strong> - Navigation links</li>
-                <li><strong>&lt;article&gt;</strong> - Independent content</li>
-                <li><strong>&lt;section&gt;</strong> - Grouped related content</li>
-                <li><strong>&lt;footer&gt;</strong> - Page or section footer</li>
-            </ul>
-
-            <h2>Key Takeaways</h2>
-            <ul>
-                <li>HTML provides structure and content to web pages</li>
-                <li>Every element should have an opening and closing tag</li>
-                <li>Use semantic elements for better accessibility and SEO</li>
-                <li>Always include alt text for images</li>
-                <li>Proper indentation makes code more readable</li>
-            </ul>
-
-            <a href="../index.html" class="back-link">← Back to Home</a>
+            <p>Semantic HTML uses meaningful tags that describe the content. This improves accessibility and SEO. Examples include:</p>
+            <div class="code-block"><code>&lt;header&gt; - Page header<br>&lt;nav&gt; - Navigation links<br>&lt;main&gt; - Main content<br>&lt;section&gt; - Thematic grouping<br>&lt;article&gt; - Self-contained content<br>&lt;footer&gt; - Page footer</code></div>
+            <h2>Creating Your First Page</h2>
+            <p>Follow these steps:</p>
+            <ol>
+                <li>Create a new file and save it as index.html</li>
+                <li>Add the basic HTML structure</li>
+                <li>Add your content using appropriate tags</li>
+                <li>Save the file and open it in a browser</li>
+            </ol>
+            <div class="takeaway">
+                <h3>💡 Key Takeaways</h3>
+                <ul>
+                    <li>HTML provides the structure of web pages</li>
+                    <li>Tags come in pairs: opening &lt;tag&gt; and closing &lt;/tag&gt;</li>
+                    <li>Use semantic tags for better accessibility</li>
+                    <li>DOCTYPE declares the HTML version</li>
+                    <li>Practice creating pages to master HTML!</li>
+                </ul>
+            </div>
         </article>
     </main>
-
     <footer>
         <p>&copy; 2026 Learning Skills. All rights reserved. | Built with ❤️ for developers</p>
     </footer>
